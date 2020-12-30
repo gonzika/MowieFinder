@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.description {
+    max-width: 60%;
+}
+
+.search-form>* {
+    min-height: 22px;
+    margin: 2px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 0px 2px black;
+    padding: 5px;
+}
+
+.search-form>*:hover {
+    box-shadow: 0px 0px 3px black;
+}
+
+#results {
+    position: relative;
+
+}
+
+#results>div {
+    border-bottom: 1px solid cadetblue;
+    display: flex;
+}
+
+#results span {
+    max-width: 70%;
+}
+
+#results div button {
+    position: absolute;
+    right: 0;
+}
+
+#results img {
+    max-width: 100px;
+}
+
+button {
+    margin: 5px;
+}
+
+.btn--active {
+    font-weight: 700;
+}
+
+#pageN {
+    max-width: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
