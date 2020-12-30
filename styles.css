@@ -12,6 +12,11 @@
 .description {
     max-width: 60%;
 }
+@media screen and (max-width: 799px) {
+    .description {
+        display: none;
+    }
+}
 
 .search-form>* {
     min-height: 22px;
