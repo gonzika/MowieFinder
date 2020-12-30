@@ -1,4 +1,4 @@
-const URL = 'http://www.omdbapi.com/?apikey='
+const URL = 'https://www.omdbapi.com/?apikey='
 const KEY = 'cc66794b'
 btn = document.getElementById('subm')
 result = document.getElementById('results')
