@@ -67,21 +67,31 @@
             <i>Для домашнего задания по теме AJAX реализовать функционал страницы favorite movies, используя для
                 хранения избранных фильмов localStorage. В хранилище лучше записывать не фильм целиком, а только его
                 id.</i>
-        </div>
-        <div>
-            <form class="search-form">
-                <input type="text" id="filmName" placeholder="Enter film's name" required>
-                <select id="typeMowie">
-                    <option value="" disabled selected>Choose mowie type</option>
-                    <option value="movie">movie</option>
-                    <option value="series">series</option>
-                    <option value="episode">episode</option>
-                </select>
-                <button type="submit" id="subm">Search</button>
-            </form>
-            <div id="results"></div>
-            <div id="details"></div>
 
+        </div>
+        <div class="main">
+            <div class="search">
+                <h1>Search mowie</h1>
+                <button onclick="watchFavorite('favorite', 'search')">Your favorite movies</button>
+                <form class="search-form">
+                    <input type="text" id="filmName" placeholder="Enter film's name" required>
+                    <select id="typeMowie">
+                        <option value="" disabled selected>Choose mowie type</option>
+                        <option value="movie">movie</option>
+                        <option value="series">series</option>
+                        <option value="episode">episode</option>
+                    </select>
+                    <button type="submit" id="subm">Search</button>
+                </form>
+                <div id="results" class="results"></div>
+                <div id="details"></div>
+            </div>
+            <div class="favorite hidden">
+                <h2>Your favorite movies</h2>
+                <button onclick="watchFavorite('search', 'favorite')">To search</button>
+                <div id="favorList" class="results"></div>
+                <div id="detailsF"></div>
+            </div>
         </div>
     </div>
 

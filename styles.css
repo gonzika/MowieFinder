@@ -12,6 +12,10 @@
 .description {
     max-width: 60%;
 }
+
+.main {
+    flex: 1;
+}
 @media screen and (max-width: 799px) {
     .description {
         display: none;
@@ -20,7 +24,7 @@
 
 .search-form>* {
     min-height: 22px;
-    margin: 2px;
+    margin: 10px 2px;
     border: 0;
     outline: 0;
     box-shadow: 0px 0px 2px black;
@@ -31,26 +35,32 @@
     box-shadow: 0px 0px 3px black;
 }
 
-#results {
+.result {
     position: relative;
 
 }
 
-#results>div {
+.result {
     border-bottom: 1px solid cadetblue;
     display: flex;
 }
 
-#results span {
-    max-width: 70%;
+.result span {
+    max-width: 50%;
+    margin-left: 10px;
 }
 
-#results div button {
+.result .btn-details {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.result .btn-favor {
     position: absolute;
     right: 0;
 }
 
-#results img {
+.result img {
     max-width: 100px;
 }
 
@@ -70,4 +80,19 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+h1, h2 {
+    line-height: 1.5;
+    padding: 0;
+    margin: 10px;
+}
+
+.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.isFavorite {
+    background-color: rgb(11, 119, 11);
 }
